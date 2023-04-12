@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting</title>
+  <!-- file normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Font Awesame icon -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- file css -->
+  <link rel="stylesheet" href="css/master.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="side-par">
+    <h2 class="logo">Alazmeh</h2>
+    <hr>
+    <ul>
+      <a href="./index.html"><li><i class="fa-regular fa-chart-bar fa-fw"></i><div>Dashboard</div></li></a>
+      <a href="./setting.html"><li class="active"><i class="fa-solid fa-gear fa-fw"></i><div>Setting</div></li></a>
+      <a href="./profile.html"><li><i class="fa-regular fa-user fa-fw"></i><div>Profile</div></li></a>
+      <a href="./project.html"><li><i class="fa-solid fa-diagram-project fa-fw"></i><div>Projects</div></li></a>
+      <a href="./course.html"><li><i class="fa-solid fa-graduation-cap fa-fw"></i><div>Courses</div></li></a>
+      <a href="./friend.html"><li><i class="fa-regular fa-circle-user fa-fw"></i><div>Friends</div></li></a>
+      <a href="./file.html"><li><i class="fa-regular fa-file fa-fw"></i><div>Files</div></li></a>
+      <a href="./plans.html"><li><i class="fa-regular fa-credit-card fa-fw"></i><div>Plans</div></li></a>
+    </ul>
+  </div>
+  <div class="body-main">
+    <nav>
+      <div class="fath">
+        <i class="fa-solid fa-search"></i>
+        <input type="search" class="search" placeholder="Type A Keyword">
+      </div>
+      <div class="notfiction">
+        <i class="fa-regular fa-bell fa-lg"></i>
+        <img src="./imgs/avatar.png" alt="">
+      </div>
+    </nav>
+    <div class="title-head setting">
+      <h1>Setting</h1>
+      <div class="bar"></div>
+      <div class="box-main">
+        <div class="box control">
+          <h2>Site Control</h2>
+          <p>Control The Website If There Is Maintenance</p>
+          <div class="web">
+            <div>
+              <h3>Website Control</h3>
+              <p class="eeee">Open/Close Website And Type The Reason</p>
+            </div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox" />
+              <div class="toggle-switch"><div class="icons">
+                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-check"></i>
+              </div></div>
+            </label>
+          </div>
+          <textarea cols="30" rows="10" placeholder="Close Message Content"></textarea>
+        </div>
+        <div class="box general">
+          <h2>General Info</h2>
+          <p>General Information About Your Account</p>
+          <p class="c">First Name</p>
+          <input type="text" placeholder="First Name">
+          <p class="c">Last Name</p>
+          <input type="text" placeholder="Last Name">
+          <p class="c">Email</p>
+          <div>
+            <input type="text" placeholder="eyadoazmeh@gmail.com" disabled>
+            <p>Change</p>
+          </div>
+        </div>
+        <div class="box security">
+          <h2>Security Info</h2>
+          <p>Security Information About Your Account</p>
+          <div class="box-in pass">
+            <div class="title">
+              <h3>Password</h3>
+              <p>Last Change On 25/10/2021</p>
+            </div>
+            <div class="change">Change</div>
+          </div>
+          <hr>
+          <div class="box-in factor">
+            <div class="title">
+              <h3>Two-Factor Authentication</h3>
+              <p>Enable/Disable The Feature</p>
+            </div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox" />
+              <div class="toggle-switch"><div class="icons">
+                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-check"></i>
+              </div></div>
+            </label>
+          </div>
+          <hr>
+          <div class="box-in device">
+            <div class="title">
+              <h3>Devices</h3>
+              <p>Check The Login Devices List</p>
+            </div>
+            <div class="buttu">Devices</div>
+          </div>
+        </div>
+        <div class="box social">
+          <h2>Social Info</h2>
+          <p>Social Media Information</p>
+          <div class="stand">
+            <input type="text" placeholder="Twitter Username">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="stand">
+            <input type="text" placeholder="Facebook Username">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="stand">
+            <input type="text" placeholder="Linkedin Username">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="stand">
+            <input type="text" placeholder="Youtube Username">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="box wedget">
+          <h2>Widgets Control</h2>
+          <p>Show/Hide Widgets</p>
+            <input id="quick" type="checkbox" checked>
+            <label for="quick">Quick Draft
+              <i class="fa-solid fa-check"></i>
+            </label><br>
+            <input id="yearly" type="checkbox" checked>
+            <label for="yearly">Yearly Targets
+              <i class="fa-solid fa-check"></i>
+            </label><br>
+            <input id="ticke" type="checkbox" checked>
+            <label for="ticke">Tickets Statistics
+              <i class="fa-solid fa-check"></i>
+            </label><br>
+            <input id="late" type="checkbox" checked>
+            <label for="late">Latest News
+              <i class="fa-solid fa-check"></i>
+            </label><br>
+            <input id="latest" type="checkbox">
+            <label for="latest">Latest Tasks
+              <i class="fa-solid fa-check"></i>
+            </label><br>
+            <input id="search" type="checkbox" checked>
+            <label for="search">Top Search Items
+              <i class="fa-solid fa-check"></i>
+            </label>
+        </div>
+        <div class="box manger">
+          <h2>Backup Manager</h2>
+          <p>Control Backup Time And Location</p>
+          <div class="date">
+            <input type="radio" name="time" id="daily" checked="">
+            <label for="daily">Daily</label>
+          </div>
+          <div class="date">
+            <input type="radio" name="time" id="weekly">
+            <label for="weekly">Weekly</label>
+          </div>
+          <div class="date">
+            <input type="radio" name="time" id="monthly">
+            <label for="monthly">Monthly</label>
+          </div>
+          <hr>
+          <div class="servers">
+            <input type="radio" name="servers" id="server-one" />
+            <div class="server">
+              <label for="server-one">
+                <i class="fa-solid fa-server"></i>
+                Megaman
+              </label>
+            </div>
+            <input type="radio" name="servers" id="server-two" checked />
+            <div class="server">
+              <label for="server-two">
+                <i class="fa-solid fa-server"></i>
+                Zero
+              </label>
+            </div>
+            <input type="radio" name="servers" id="server-three" />
+            <div class="server">
+              <label for="server-three">
+                <i class="fa-solid fa-server"></i>
+                Sigma
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
